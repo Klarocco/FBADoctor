@@ -1,0 +1,24 @@
+if($udwQuantity > 0)
+        {
+            $case[0] = array('case_type' => 'UDW','totCount' => $udwQuantity);
+            $case[1] = array('case_type' => 'ULW','totCount' => 0);
+            $case[2] = array('case_type' => 'ULFW','totCount' => 0);
+        }
+        else if($ulwQuantity > 0)
+        {
+            $case[0] = array('case_type' => 'UDW','totCount' => 0);
+            $case[1] = array('case_type' => 'ULW','totCount' => $ulwQuantity);
+            $case[2] = array('case_type' => 'ULFW','totCount' => 0);
+        }
+        else if($ulfwQuantity > 0)
+        {
+            $case[0] = array('case_type' => 'UDW','totCount' => 0);
+            $case[1] = array('case_type' => 'ULW','totCount' => 0);
+            $case[2] = array('case_type' => 'ULFW','totCount' => 0);
+        }
+        else if($ulwQuantity > 0 && $udwQuantity > 0)
+        {
+            $case[0] = array('case_type' => 'UDW','totCount' => $udwQuantity);
+            $case[1] = array('case_type' => 'ULW','totCount' => $ulwQuantity);
+            $case[1] = array('case_type' => 'ULW','totCount' => $ulwQuantity);
+        }

@@ -1,0 +1,156 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar1 {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar1 {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar1 > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar1 > .active > a,
+.nav-sidebar1 > .active > a:hover,
+.nav-sidebar1 > .active > a:focus {
+  color: #fff;
+  background-color: #2c6e98;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.error {
+    color:red;
+  }
+ .asterisk:after{
+        content:"*" ;
+        color:red    
+  }
+  .picker {
+	margin:0;
+	padding:0;
+	border:0;
+	width:90px;
+	height:20px;
+	border-right:20px solid green;
+	line-height:20px;
+}
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.pricing-plan-title {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.stepy-header {
+    border-bottom: 1px solid #e6e7e8;
+    display: table;
+    list-style: outside none none;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    width: 100%;
+}
+.stepy-header li div {
+    color: #000;
+    font-family: "Source Sans Pro","Segoe UI","Droid Sans",Tahoma,Arial,sans-serif;
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 1.42;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.desable{
+     pointer-events: none;opacity: 0.4;
+}
+
